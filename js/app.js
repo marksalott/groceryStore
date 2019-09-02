@@ -102,6 +102,7 @@ if (scale == true){
     tempDisplayed = 'farenheit';
 };
 
+// changes the h3 header when clicked
 h3Header.addEventListener('click', () =>{if (tempDisplayed == 'farenheit') {
     celcius = F2C(numberToConvert);
     console.log(`celsius is `, celcius);
