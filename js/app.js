@@ -88,16 +88,29 @@ let numberToConvert = Number(prompt(`Enter a temperature:`));
 let scale = confirm(`Is the number in farenheit? Press OK for yes.`);
 console.log(scale);
 
+let tempDisplayed = '';
 
 if (scale == true){
     celcius = F2C(numberToConvert);
     console.log(`celsius is `, celcius);
     h3Header.innerHTML =  `${celcius} C`;
+    tempDisplayed = 'celcius';
 }else{
     Farenheit = C2F(numberToConvert);
     console.log(`this is the number in Farenheit`, Farenheit);
     h3Header.innerHTML =  `${Farenheit} F`;
+    tempDisplayed = 'farenheit';
 };
 
-
+h3Header.addEventListener('click', () =>{if (tempDisplayed == 'farenheit') {
+    celcius = F2C(numberToConvert);
+    console.log(`celsius is `, celcius);
+    h3Header.innerHTML =  `${celcius} C`;
+    tempDisplayed = 'celcius';
+} else{
+    Farenheit = C2F(numberToConvert);
+    console.log(`this is the number in Farenheit`, Farenheit);
+    h3Header.innerHTML =  `${Farenheit} F`;
+    tempDisplayed = 'farenheit';
+}});
 
