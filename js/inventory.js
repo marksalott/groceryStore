@@ -106,7 +106,7 @@ const pineapple = addProduce(true, '../img/050-pineapple.png', 'Pineapple', 1.99
 //Throw all my produce into an array for a list
 const inventoryList = [cherry, bamboo, peanut, pitaya, onion, tomato, durian, lettuce, broccoli, corn, breastMilkFruit, blueberry, potato, mango, bellPepper, avocado, strawberry, peas, kiwi, grape, parsley, cucumber, ginger, springOnion, pomegranate, banana, watermelon, artichoke, carrot, roseApple, rambutan, salad, peach, olive, mangosteen, radish, mushroom, chili, lemon, apple, cabbage, orange, tamarind, coconut, eggplant, pumpkin, acorn, papaya, asparagus, pineapple];
 //Throw all my produce into an array for a list
-const inventoryList = [cherry, banana, mango];
+// const inventoryList = [cherry, banana, mango];
 
 // Make two methods, one responsible of making an element- REF: makeElement(), the other to create multiple attributes at my will - REF: makeAttributes()
 function makeElement(element, elementId, elementClass, text) {

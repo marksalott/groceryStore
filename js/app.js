@@ -26,7 +26,7 @@ NAV_LIST.forEach( function (list)  {
     anchor.setAttribute('href', list.link);
     anchor.innerHTML = list.name;
     li.appendChild(anchor);
-    nav.append(li);
+    nav.append('li');
 });
 
 
