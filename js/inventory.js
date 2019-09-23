@@ -153,6 +153,8 @@ function makeProduceCard(produce) {
     makeAttributes(image, ['src', `${produce.image}`], ['alt', `An image of a ${produce.produce}`]);
     const produceName = makeElement('span', '', 'lead', produce.produce);
     const price = makeElement('h5', '', '', `Price: $${produce.price}`);
+    const checkBox = makeElement('input', '','','');
+    makeAttributes(checkBox, ['type','checkbox']);
     if(produce.sale) {
         discountPrice = makeElement('h5', '', '', `Sale Price: $ ${produce.salePrice}`);
         savings = makeElement('h5', '', '', `Savings: $ ${produce.savings}`);
@@ -161,7 +163,7 @@ function makeProduceCard(produce) {
         savings = '';
     }
     
-    wrapper.append(image, produceName, price, discountPrice, savings);
+    wrapper.append(image, produceName, price, discountPrice, savings, checkBox);
     li.append(wrapper);
     box.appendChild(li);
     return box;

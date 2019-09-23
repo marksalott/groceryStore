@@ -17,7 +17,8 @@ const NAV_LIST = [
     }
 ];
 //grab nav 
-const nav = document.querySelector('nav > ul');
+const nav = document.getElementById('idNav');
+// const nav = document.querySelector('nav > ul');
 //now to loop through nav list and append to nav, lets try it out:
 NAV_LIST.forEach( function (list)  {
     let li = document.createElement('li');
@@ -26,7 +27,7 @@ NAV_LIST.forEach( function (list)  {
     anchor.setAttribute('href', list.link);
     anchor.innerHTML = list.name;
     li.appendChild(anchor);
-    nav.append(li);
+    nav.append('li');
 });
 
 
