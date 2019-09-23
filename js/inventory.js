@@ -254,7 +254,8 @@ function textAreaElement(name, placeholder, elementClass, elementId, cols = 4, r
 function createForm(){
     const element = document.createElement('form');
     element.setAttribute('method', 'GET');
-    element.setAttribute('action', 'form-submission.js');
+    // element.setAttribute('action', 'form-submission.js');
+    element.setAttribute('action', 'inventory.js');
     element.setAttribute('name', 'myForm');
     return element;
 }
