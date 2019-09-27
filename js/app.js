@@ -1,4 +1,4 @@
-const storeName = 'Jacque\'s';
+const storeName = 'marK\'s';
 document.title = `${storeName} Grocery Store`;
 
 const NAV_LIST = [
@@ -17,10 +17,9 @@ const NAV_LIST = [
     }
 ];
 //grab nav 
-// const nav = document.querySelector('nav > ul');
-const nav = document.getElementById('idNav');
-
-
+const nav = document.querySelector('nav > ul');
+// const nav = document.getElementById('idNav');
+console.log(nav);
 
 //now to loop through nav list and append to nav, lets try it out:
 NAV_LIST.forEach( function (list)  {
@@ -34,5 +33,6 @@ NAV_LIST.forEach( function (list)  {
 });
 
 let indexNav = document.getElementById(idNav)
+console.log(indexNav);
 
 
